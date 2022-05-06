@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F50057"
+    tools:context=".activity.SongDetailActivity">
+
+    <TextView
+        android:id="@+id/song_detail_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLines="1"
+        android:padding="20dp"
+        android:scrollHorizontally="true"
+        android:text="Song Name"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/song_detail_thumbnail"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/song_detail_name"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:src="@drawable/img" />
+
+    <RelativeLayout
+        android:id="@+id/song_detail_control_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/song_detail_thumbnail"
+        android:layout_alignParentBottom="true"
+        android:padding="50dp">
+
+        <SeekBar
+            android:id="@+id/song_detail_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#fff" />
+
+        <TextView
+            android:id="@+id/song_detail_current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/song_detail_seekbar"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:text="0:00"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/song_detail_total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/song_detail_seekbar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:text="3:43"
+            android:textColor="#fff" />
+
+        <RelativeLayout
+            android:id="@+id/song_detail_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/song_detail_total_time"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/song_detail_previous"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_baseline_skip_previous_24" />
+
+            <ImageView
+                android:id="@+id/song_detail_control"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_baseline_play_circle_filled_24"
+                android:tag="control_stop" />
+
+            <ImageView
+                android:id="@+id/song_detail_next"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_baseline_skip_next_24" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/song_detail_lyric"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/song_detail_controls"
+            android:text="Click to get lyrics"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+</RelativeLayout>

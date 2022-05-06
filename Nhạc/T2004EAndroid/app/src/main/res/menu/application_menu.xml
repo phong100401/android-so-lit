@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:title="Contact Manager" android:icon="@drawable/ic_baseline_360_24">
+            <menu>
+                <item android:icon="@drawable/ic_baseline_contacts_24" android:id="@+id/list_contact" android:title="@string/list_contact"></item>
+                <item android:icon="@drawable/ic_baseline_person_add_alt_1_24"  android:id="@+id/add_contact" android:title="@string/add_contact"></item>
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Song Manager" android:icon="@drawable/ic_baseline_library_music_24">
+            <menu>
+                <item android:icon="@drawable/ic_baseline_queue_music_24" android:id="@+id/list_song" android:title="@string/list_song"></item>
+                <item android:icon="@drawable/ic_baseline_add_to_photos_24" android:id="@+id/add_song" android:title="@string/add_song"></item>
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_baseline_info_24" android:id="@+id/about_us" android:title="@string/about_us"></item>
+        <item android:icon="@drawable/ic_baseline_policy_24" android:id="@+id/policy" android:title="@string/policy"></item>
+    </group>
+</menu>

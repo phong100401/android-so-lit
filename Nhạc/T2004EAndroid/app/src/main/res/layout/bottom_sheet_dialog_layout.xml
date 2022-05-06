@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#999"
+    android:padding="20dp"
+    >
+    <TextView
+        android:id="@+id/bottom_sheet_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:fontFamily="@font/aclonica"
+        />
+    <TextView
+        android:id="@+id/bottom_sheet_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Author"
+        android:layout_below="@+id/bottom_sheet_title"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:fontFamily="@font/baloo"
+        />
+    <TextView
+        android:id="@+id/bottom_sheet_lyric"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lyrics"
+        android:layout_below="@+id/bottom_sheet_author"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:fontFamily="@font/baloo"
+        />
+</RelativeLayout>
